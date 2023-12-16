@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    background-color: black;
+    z-index: 2;
+    width: 40%;
+    /* Spécifiez la largeur souhaitée pour .main */
+    margin-left: auto;
+    /* Centrage horizontal */
+    margin-right: auto;
+    /* S'assurer que le conteneur est au-dessus du pseudo-élément */
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* Ajustez ces valeurs pour contrôler la taille du flou */
+    left: -250px;
+    right: -250px;
+    bottom: -50px;
+    z-index: -1;
+    /* Positionner derrière le contenu du conteneur */
+    background: inherit;
+    /* Utilisez la même couleur de fond que le conteneur */
+    filter: blur(2rem);
+}
+
+#canv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Derrière le conteneur mais au-dessus du fond */
+}
+
+
+/* CSS */

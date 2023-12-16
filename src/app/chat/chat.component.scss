@@ -1,0 +1,18 @@
+p {
+    color: white;
+}
+
+.textarea-glow {
+    background-color: black;
+    color: rgb(136, 211, 136);
+    text-shadow: 0 0 5px rgb(86, 113, 86), 0 0 10px rgb(86, 113, 86), 0 0 15px rgb(86, 113, 86), 0 0 20px rgb(86, 113, 86);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border: 3px solid rgb(117, 139, 117);
+}
+
+.textarea-glow:focus {
+    border: 3px solid rgb(86, 113, 86);
+}
